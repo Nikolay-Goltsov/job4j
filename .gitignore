@@ -72,3 +72,7 @@ jrebel.lic
 build
 .gradle
 *.pid
+/lib/
+/lib/hamcrest-all-1.3.jar
+/lib/junit-4.12.jar
+/.gitignore
