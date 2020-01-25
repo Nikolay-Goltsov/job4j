@@ -9,7 +9,8 @@ public class SqMax {
                     result=first;
                 }
             }
-        }else if(second>third){
+        }
+        if(second>third){
             if (second>forth){
                 result=second;
             }
