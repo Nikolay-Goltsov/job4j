@@ -1,5 +1,11 @@
 package ru.job4j.calculator;
 
+/*
+* Class Calculator. Приметивный калькулятор, для начала.
+* @author Goltsov
+* @since ...01.20г.
+
+*/
 public class Calculator {
 
     public static  void add (double first, double second){
@@ -19,7 +25,13 @@ public class Calculator {
         double result = first-second;
         System.out.println( first +" - "+ second+" = "+result);
     }
-
+/*
+* Главный класс для запуска программы.
+* Проверк созданных методов.
+* Примечание- методы выводят информацию в консоль.
+* Конструктор вывод строки в консоль.
+* @param arg - args.
+* */
 
 
     public static void main(String[] args) {
