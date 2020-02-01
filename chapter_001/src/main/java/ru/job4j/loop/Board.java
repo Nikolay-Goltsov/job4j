@@ -7,9 +7,13 @@ public class Board {
             for (int j = 0; j < width; j++) {
                 if ((j + i) % 2 == 0) {
                     System.out.print("X");
-                } else {System.out.print(" ");
-                }}System.out.println();
-        }}
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         pain(3, 3);
