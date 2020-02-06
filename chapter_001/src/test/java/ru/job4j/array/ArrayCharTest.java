@@ -11,7 +11,7 @@ public class ArrayCharTest {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'e', 'l', 'l', 'o'};
         boolean result = ArrayChar.startsWith(word, pref);
-        assertThat(result, is(true));
+        assertThat(result, is(true)) ;
     }
 
     @Test
