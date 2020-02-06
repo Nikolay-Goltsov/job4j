@@ -1,5 +1,5 @@
 package ru.job4j.array;
-
+//#2
 public class SortSelected {
     public static int[] sort(int[] data) {
         int min = MinDiapason.findMin(data, 0, data.length);
