@@ -4,11 +4,11 @@ public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int rom) {
         boolean result = true;
         for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                if (board[rom][j] != 'X') {
+
+                if (board[rom][i] != 'X') {
                     result = false;
                     break;
-                }
+
             }
         }
         return result;
