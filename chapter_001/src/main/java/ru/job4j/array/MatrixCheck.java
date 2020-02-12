@@ -36,7 +36,6 @@ public class MatrixCheck {
 
     public static boolean isWin(char[][] board) {
         boolean result = false;
-        int x = 0;
         for (int i = 0; i < board.length; i++) {
             if (board[i][i] == 'X') {
                 result = true;
