@@ -1,13 +1,20 @@
 package ru.job4j.array;
+
 //#2
 public class SortSelected {
     public static int[] sort(int[] data) {
-        int min = MinDiapason.findMin(data, 0, data.length);
-        System.out.println("min= " +min);
 
-        int index = FindLoop.indexOf(data, min, 0, data.length);
-        System.out.println("min_2= " +min);
-        System.out.println("index= " +index);
+
+        for (int i = 0; i < data.length; i++) {
+
+            int min = MinDiapason.findMin(data, i, data.length);// минимальный элемент
+            int index = FindLoop.indexOf(data, min, i, data.length);//Ищем индекс
+//           if (index<min) {
+               int temp = data[i];
+               data[i] = data[index];
+               data[index] = temp;
+           }
+//        }
         return data;
     }
 }
