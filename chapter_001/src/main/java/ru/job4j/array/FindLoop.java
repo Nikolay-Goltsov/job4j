@@ -20,7 +20,7 @@ public class FindLoop {
 
         for (int i = start; i <= finish; i++) {
             if (data[i] == el) {
-                rst = el;
+                rst = i; // Вот здесь было не верно!!!
                 break;
             }
         }
