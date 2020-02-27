@@ -1,4 +1,5 @@
 package ru.job4j.condition;
+
 /*
 Задание
 
@@ -15,7 +16,7 @@ public class Point {
 //        double j = Math.pow((y2-y1),2);
 //        double distance = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 
-        return Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+        return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
 
     public static void main(String[] args) {

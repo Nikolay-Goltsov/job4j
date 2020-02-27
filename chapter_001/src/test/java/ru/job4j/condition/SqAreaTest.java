@@ -9,11 +9,11 @@ public class SqAreaTest {
     public void square() {
         int p = 6;
         int k = 2;
-        double expected =2.0;
-        double out = SqArea.square(p,k);
-        Assert.assertEquals(expected,out,0.01);
+        double expected = 2.0;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
 
 
-   }
+    }
 
 }

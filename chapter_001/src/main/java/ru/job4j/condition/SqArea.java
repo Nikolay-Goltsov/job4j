@@ -23,8 +23,8 @@ s = L * h; - формула для вычисления площади прям�
 public class SqArea {
     public static double square(int p, int k) {
 // С математикой вашпе плохо(((
-        int h = p/(2*(k+1));
-        int s = h*k*h;
+        int h = p / (2 * (k + 1));
+        int s = h * k * h;
         return s;
     }
 

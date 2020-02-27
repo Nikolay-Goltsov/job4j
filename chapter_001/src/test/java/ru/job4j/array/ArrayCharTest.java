@@ -11,13 +11,13 @@ public class ArrayCharTest {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'e', 'l', 'l', 'o'};
         boolean result = ArrayChar.startsWith(word, pref);
-        assertThat(result, is(true)) ;
+        assertThat(result, is(true));
     }
 
     @Test
     public void whenNotStartWithPrefixThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] pref = {'H', 'e','l', 'l', 'о'};
+        char[] pref = {'H', 'e', 'l', 'l', 'о'};
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result, is(false));
     }

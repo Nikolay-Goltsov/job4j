@@ -2,17 +2,20 @@ package ru.job4j.converter;
 
 public class Converter {
 
-    public  static  int rubleToEuro(int value){
-        return  value/70;
+    public static int rubleToEuro(int value) {
+        return value / 70;
     }
-    public static int rubleToDollar(int value){
-        return  value/60;
+
+    public static int rubleToDollar(int value) {
+        return value / 60;
     }
-    public static int dollarToRubles(int value){
-        return  value*60;
+
+    public static int dollarToRubles(int value) {
+        return value * 60;
     }
-    public static int euroToRubles(int value){
-        return  value*70;
+
+    public static int euroToRubles(int value) {
+        return value * 70;
     }
 
     public static void main(String[] args) {
@@ -20,10 +23,10 @@ public class Converter {
         int dollar = rubleToDollar(256);
         int rubles = euroToRubles(256);
         int rublesD = dollarToRubles(256);
-        System.out.println("256 rubles are " + euro +  " euro.");
-        System.out.println("256 rubles are " + dollar +  " dollar.");
-        System.out.println("256 euro are " + rubles +  " rubles.");
-        System.out.println("256 dollar are " + rublesD +  " rubles.");
+        System.out.println("256 rubles are " + euro + " euro.");
+        System.out.println("256 rubles are " + dollar + " dollar.");
+        System.out.println("256 euro are " + rubles + " rubles.");
+        System.out.println("256 dollar are " + rublesD + " rubles.");
 
         //Testing code
         int in = 256;

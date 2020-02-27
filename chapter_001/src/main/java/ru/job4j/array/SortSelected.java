@@ -7,13 +7,13 @@ public class SortSelected {
 
         for (int i = 0; i < data.length; i++) {
 
-            int min = MinDiapason.findMin(data, i, data.length);// минимальный элемент
-            int index = FindLoop.indexOf(data, min, i, data.length);//Ищем индекс
+            int min = MinDiapason.findMin(data, i, data.length); // минимальный элемент
+            int index = FindLoop.indexOf(data, min, i, data.length); //Ищем индекс
 //           if (index<min) {
-               int temp = data[i];
-               data[i] = data[index];
-               data[index] = temp;
-           }
+            int temp = data[i];
+            data[i] = data[index];
+            data[index] = temp;
+        }
 //        }
         return data;
     }

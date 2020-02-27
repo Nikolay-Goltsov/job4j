@@ -1,4 +1,5 @@
 package ru.job4j.calculator;
+
 /*
 Задание.
 
@@ -11,13 +12,13 @@ package ru.job4j.calculator;
  */
 public class Fit {
     public static double manWeight(double height) {
-        double value = (height-100)*1.15;
+        double value = (height - 100) * 1.15;
         return value;
     }
 
 
     public static double womanWeight(double height) {
-        double value = (height-110)*1.15;
+        double value = (height - 110) * 1.15;
         return value;
     }
 

@@ -8,8 +8,9 @@ public class ArrayChar {
             if (pref[i] != world[i]) {
                 result = false;
                 break;
-            }}
+            }
+        }
         return result;
-}
+    }
 }
 
