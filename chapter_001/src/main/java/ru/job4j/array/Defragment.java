@@ -4,14 +4,19 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
-                int point = i;//указатель на не null ячейку.По факту указатель на пустую ячейку.
+                int point = i + 1; //указатель на не null ячейку.По факту указатель на пустую ячейку.
                 //переместить первую не null ячейку
-                while (array[point] == null) {// работает пока пустая ячейка не заполнена
-                    i++;//увеличиваем индекс для проверки следующего элемента
-                    array[point] = array[i]; //меням следующий элемент местами с пустым
-                    array[i] = null;//очищаем ячейку
-                    // тут надо вернутся на элемент назад
+                while (point < array.length) { //работает пока пустая ячейка не заполнена
+                    if (array[point] != null) {
+                        array[i] = array[point]; //меням следующий элемент местами с пустым
+                        array[point] = null; //очищаем ячейку
+                        // тут надо вернутся на элемент назад
+                        break;
+
+                    }
+                    point++;
                 }
+
             }
         }
         return array;
