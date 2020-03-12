@@ -5,6 +5,13 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author Nikolay Goltsov
+ * Класс тест для тестирования метода startsWith из класса ArrayChar
+ * world - Начальный массив. Массив,который сравнивают.
+ * pref - Конечный массив. Массив, с которым сравнивают.
+ */
+
 public class ArrayCharTest {
     @Test
     public void whenStartWithPrefixThenTrue() {

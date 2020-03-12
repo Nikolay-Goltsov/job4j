@@ -5,6 +5,11 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author Nikolai Goltsov
+ * Класс тест метеда findMin из класса MinDiapason.
+ *
+ */
 public class MinDiapasonTest {
 
     @Test

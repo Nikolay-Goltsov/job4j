@@ -5,7 +5,11 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
+/**
+ * Класс тест для проверки метода endsWith из касса EndsWith
+ *
+ * @author Nikolay Goltsov
+ */
 public class EndsWithTest {
     @Test
     public void whenEndWithPrefixThenTrue() {

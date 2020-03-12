@@ -4,22 +4,26 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-
+/**
+ * @author Nikolai Goltsov
+ * Класс тест для проверки метода findMin из класcа MinArr
+ * На вход методу findMin передаем массив типа int
+ */
 public class MinTest {
 
     @Test
     public void whenFirstMin() {
-        assertThat(Min.findMin(new int[]{0, 5, 10}), is(0));
+        assertThat(MinArr.findMin(new int[]{0, 5, 10}), is(0));
     }
 
     @Test
     public void lastMin() {
-        assertThat(Min.findMin(new int[]{10, 5, 3}), is(3));
+        assertThat(MinArr.findMin(new int[]{10, 5, 3}), is(3));
     }
 
     @Test
     public void middleMin() {
-        assertThat(Min.findMin(new int[]{10, 2, 5}), is(2));
+        assertThat(MinArr.findMin(new int[]{10, 2, 5}), is(2));
     }
 
 }

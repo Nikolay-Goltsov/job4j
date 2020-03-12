@@ -5,6 +5,16 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author Nikolai Goltsov
+ * Класс тест для проверки методов из класcа MatrixCheck. Проверяем каждую ячейку на наличие символа 'X'
+ * whenHasMonoHorizontal- проверяем определеннуй горизонтальную строку
+ * whenMonoVertical- проверяем определенную вертикальную строку
+ * whenDiagonal- проверяем любую диоганаль
+ * whenDataMonoByTrueThenTrue- проверяем заполнение любой строки
+ * whenDataNotMonoByTrueThenFalse- проверяем если одна ячейка не заполнена
+ * whenDataHMonoByTrueThenTrue- проверяем если одна строка запонена полностью, а другая нет.
+ */
 public class MatrixCheckTest {
     @Test
     public void whenHasMonoHorizontal() {

@@ -1,5 +1,10 @@
 package ru.job4j.array;
-//#1
+
+/**
+ * @autor Nikolai Goltsov
+ *
+ * Класс тест метода sort из класса SortSelected.
+ */
 
 import org.junit.Test;
 

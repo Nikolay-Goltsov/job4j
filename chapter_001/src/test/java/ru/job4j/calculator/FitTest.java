@@ -3,8 +3,11 @@ package ru.job4j.calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * @author Nikolay Goltssov
+ * Класс тест для проверки методов  manWeight и womanWeight из класса Fit
+ */
 public class FitTest {
-
     @Test
     public void manWeight() {
         double man = 175;
@@ -20,5 +23,4 @@ public class FitTest {
         double out = Fit.womanWeight(woman);
         Assert.assertEquals(expected, out, 0.1);
     }
-
 }

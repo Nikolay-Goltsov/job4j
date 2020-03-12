@@ -6,7 +6,12 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
+/**
+ * Класс тест для проверки Минибота из класса DimmyBot.
+ * Задаем простые вопросы и сверяем их с ответами
+ *
+ * @author Nikolai Goltsov
+ */
 public class DymmyBotTest {
     @Test
     public void whenGreetBot() {
