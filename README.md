@@ -1,1 +1,2 @@
-# job4j I clon. Hi. version 2
+# job4j 
+В курсе ведется работа с ветками git
