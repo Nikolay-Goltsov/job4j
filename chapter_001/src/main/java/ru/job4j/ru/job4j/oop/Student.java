@@ -6,8 +6,8 @@ public class Student {
      * @author Nikolai Goltsov
      * Класс описывает объект типа "студент" и его методы.
      */
-    public void music() {
-        System.out.println("tram, pa, pam.");
+    public void music(String lyrics) {
+        System.out.println("I can sing a soug : " + lyrics);
     }
 
     public void song() {
@@ -16,12 +16,10 @@ public class Student {
 
     public static void main(String[] args) {
         Student petya = new Student();
-        petya.music();
+        String song = "I believe I can fly";
+        petya.music(song);
         petya.song();
-        petya.music();
         petya.song();
-        petya.music();
         petya.song();
-
     }
 }
