@@ -12,4 +12,10 @@ public class TriangleTest {
         assertThat(result, is(true));
     }
 
+    @Test
+    public void whenArea() {
+        boolean result = Triangle.exist(?????);
+        assertThat(result, is(true));
+    }
+
 }

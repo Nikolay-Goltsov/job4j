@@ -13,8 +13,8 @@ public class Point {
         return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((j1 - j2), 2));
     }
 
-    public double distance(Point that) {
-        return Math.sqrt(Math.pow((this.x - that.x), 2) + Math.pow((this.y - that.y), 2));
+    public  double distance(Point that) {
+        return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 
     public static void main(String[] args) {
