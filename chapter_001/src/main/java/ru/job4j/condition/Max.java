@@ -15,4 +15,9 @@ public class Max {
         int result = left > right ? left : right;
         return result;
     }
+
+    public static int max(int first, int second, int third) {
+        int temp = max(first, second);
+        return max(first, temp);
+    }
 }
