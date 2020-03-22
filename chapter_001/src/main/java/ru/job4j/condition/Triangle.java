@@ -18,8 +18,7 @@ public class Triangle {
         double c = second.distance(third);
         if (this.exist(a, b, c)) {
             double p = (a + b + c) / 2;
-//            rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));// так мы расчитывали площадь треугольника ранее.
-            rsl = -1;
+            rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c)); // так мы расчитывали и выводили результат площади треугольника ранее.
         }
         return rsl;
 
