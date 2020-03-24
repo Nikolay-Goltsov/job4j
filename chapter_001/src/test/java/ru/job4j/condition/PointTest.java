@@ -6,6 +6,14 @@ import org.junit.Test;
 public class PointTest {
     @Test
     public void distance() {
+        int x1 = 12;
+        int x2 = 23;
+        int j1 = 45;
+        int j2 = 20;
+        double expected = 27.31;
+//        double out = Point.distance3d(x1, j1, x2, j2);
+//        Assert.assertEquals(expected, out, 0.01);
+    }
         int x1 = 0;
         int x2 = 0;
         int y1 = 2;
@@ -26,11 +34,6 @@ public class PointTest {
         int y2 = 0;
         int z2 = 0;
 
-        double expected = 2;
-        Point point1 = new Point(x1, y1, z1);
-        Point point2 = new Point(x2, y2, z2);
 
-        double out1 = point1.distance3d(point2);
-        Assert.assertEquals(expected, out1, 0.01);
     }
 }
