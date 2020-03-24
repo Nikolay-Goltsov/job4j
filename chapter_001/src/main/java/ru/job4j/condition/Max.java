@@ -17,13 +17,12 @@ public class Max {
     }
 
     public static int max(int first, int second, int third) {
-        int temp = max(first, second);
-        return max(third, temp);
+        return max(first, max(second, third));
     }
 
     public static int max(int first, int second, int third, int fry) {
         int temp = max(first, second);
         int temp2 = max(third, fry);
-        return max(temp2, temp);
+        return max(first, max(second, third, fry));
     }
 }
