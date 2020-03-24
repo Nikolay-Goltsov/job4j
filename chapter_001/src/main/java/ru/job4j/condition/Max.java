@@ -3,7 +3,7 @@ package ru.job4j.condition;
 /**
  * Метод для нахождения максимального числа из 2,3,4-х чисел.
  *
- * @author Nikolai Goltsov
+ * @author Nikolai Goltsov.
  */
 public class Max {
     /**
