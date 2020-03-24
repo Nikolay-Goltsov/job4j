@@ -16,14 +16,24 @@ public class Max {
         return result;
     }
 
+    /**
+     * @param first  Первое число
+     * @param second Второе число
+     * @param third  Третье число
+     * @return Возращает максимальное число
+     */
     public static int max(int first, int second, int third) {
-        int temp = max(first, second);
-        return max(third, temp);
+        return max(first, max(second, third));
     }
 
+    /**
+     * @param first  Первое число
+     * @param second Второе число
+     * @param third  Третье число
+     * @param fry    Четвертое число
+     * @return Возращает максимальное число
+     */
     public static int max(int first, int second, int third, int fry) {
-        int temp = max(first, second);
-        int temp2 = max(third, fry);
-        return max(temp2, temp);
+        return max(first, max(second, third, fry));
     }
 }
