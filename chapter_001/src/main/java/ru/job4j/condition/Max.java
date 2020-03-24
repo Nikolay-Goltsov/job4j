@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 /**
- * Метод для нахождения максимального числа из 2х чисел.
+ * Метод для нахождения максимального числа из 2,3,4-х чисел.
  *
  * @author Nikolai Goltsov
  */
@@ -16,13 +16,24 @@ public class Max {
         return result;
     }
 
+    /**
+     * @param first  Первое число
+     * @param second Второе число
+     * @param third  Третье число
+     * @return Возращает максимальное число
+     */
     public static int max(int first, int second, int third) {
         return max(first, max(second, third));
     }
 
+    /**
+     * @param first  Первое число
+     * @param second Второе число
+     * @param third  Третье число
+     * @param fry    Четвертое число
+     * @return Возращает максимальное число
+     */
     public static int max(int first, int second, int third, int fry) {
-        int temp = max(first, second);
-        int temp2 = max(third, fry);
         return max(first, max(second, third, fry));
     }
 }
