@@ -34,7 +34,7 @@ public class Point {
     }
 
     /**
-     * Метод принемающий объект типа Point
+
      *
      * @param that
      * @return расстояние между точками
@@ -44,7 +44,7 @@ public class Point {
     }
 
     /**
-     * Метод принемает на вход объект типа Point
+
      *
      * @param that
      * @return расстояние между точками
