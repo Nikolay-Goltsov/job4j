@@ -10,23 +10,29 @@ public class PointTest {
         int x2 = 23;
         int j1 = 45;
         int j2 = 20;
-        double expected = 27.31;
-//        double out = Point.distance3d(x1, j1, x2, j2);
-//        Assert.assertEquals(expected, out, 0.01);
+        double expected = 33.13;
+        Point point = new Point(x1, x2);
+        Point point1 = new Point(j1, j2);
+        double out = point.distance(point1);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void distance3d() {
-        int x1 = 13;
-        int x2 = 23;
-        int j1 = 34;
-        int j2 = 34;
-        int z1 = 12;
-        int z2 = 14;
-        double expected = 23.34;
-//        double out = Point.distance3d(Point x1);
-//        Assert.assertEquals(expected, out, 0.01);
-
+        int x1 = 0;
+        int x2 = 0;
+        int x3 = 0;
+        int y1 = 2;
+        int y2 = 0;
+        int y3 = 0;
+        int z1 = 3;
+        int z2 = 0;
+        int z3 = 0;
+        double expected = 3;
+        Point point1 = new Point(x1, x2, x3);
+        Point point2 = new Point(y1, y2, y3);
+        Point point3 = new Point(z1, z2, z3);
+        double out1 = point1.distance3d(point3);
+        Assert.assertEquals(expected, out1, 0.01);
     }
-
 }
