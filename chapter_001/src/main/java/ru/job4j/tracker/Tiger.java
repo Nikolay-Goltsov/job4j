@@ -7,5 +7,6 @@ public class Tiger extends Predator {
 
     public Tiger(String name) {
         super(name);
-    }
+        Predator predator = new Predator();
+        }
 }
