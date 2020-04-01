@@ -12,6 +12,6 @@ public class Predator extends Animal {
      * @param name вид животного.
      */
     public Predator(String name) {
-        super(name);
+        new Predator(); // Вызов конструктора по умолчанию
     }
 }
