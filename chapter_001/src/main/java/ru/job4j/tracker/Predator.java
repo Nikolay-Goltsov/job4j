@@ -7,11 +7,13 @@ public class Predator extends Animal {
     public Predator() {
         System.out.println("class Predator");
     }
+
     /**
-     *Конструктор принимает на вход вид животного
+     * Конструктор принимает на вход вид животного
+     *
      * @param name вид животного.
      */
     public Predator(String name) {
-        new Predator(); // Вызов конструктора по умолчанию
+        super(name);
     }
 }
