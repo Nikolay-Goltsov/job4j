@@ -1,7 +1,5 @@
 package ru.job4j.inheritance;
 
-import jdk.jfr.StackTrace;
-
 public class HtmlReport extends TextReport {
     @Override
     public String generate(String name, String body) {
