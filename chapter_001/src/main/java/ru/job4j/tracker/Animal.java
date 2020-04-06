@@ -16,4 +16,9 @@ public class Animal {
         this.name = name;
         System.out.println(name);
     }
+
+    public static void main(String[] args) {
+      //  Predator predator = new Predator();
+        Tiger tiger = new Tiger();
+    }
 }

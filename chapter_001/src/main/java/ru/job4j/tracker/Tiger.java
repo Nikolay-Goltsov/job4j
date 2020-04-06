@@ -5,6 +5,7 @@ public class Tiger extends Predator {
      * Конструктор по умочанию. Выводит название класса.
      */
     public Tiger() {
+        super();
         System.out.println("class Tiger");
     }
 

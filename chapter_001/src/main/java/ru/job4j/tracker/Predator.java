@@ -5,6 +5,7 @@ public class Predator extends Animal {
      * Конструктор по умочанию. Выводит название класса.
      */
     public Predator() {
+        super();
         System.out.println("class Predator");
     }
 
