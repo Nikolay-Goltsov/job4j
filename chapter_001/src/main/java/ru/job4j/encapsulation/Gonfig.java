@@ -3,7 +3,7 @@ package ru.job4j.encapsulation;
 public class Gonfig {
     private String name;
     private int position;
-    public String[] properties;
+    private String[] properties;
 
     public Gonfig(String name) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Gonfig {
         return search(key);
     }
 
-    public String search(String key) {
+    private String search(String key) {
         return key;
     }
 }
