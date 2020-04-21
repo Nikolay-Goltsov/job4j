@@ -7,46 +7,48 @@ public class Shop {
         products[1] = new Product("Bread", 4);
         products[2] = new Product("Egg", 19);
 
-//        for (int index = 0; index < products.length; index++) {
-//            Product product = products[index];
-//            //проверяем, что объект/ячейка не равен/на null.
-//            if (product != null) {
-//                System.out.println(product.getName());
-//            } else {
-//                System.out.println("null");
-//            }
-//        }
-//        System.out.println();
-//        System.out.println("Обнуляем ячейку с индексом 1");
-        //products[1] = null;
-
-//        for (int index = 0; index < products.length; index++) {
-//            Product product = products[index];
-//            //проверяем, что объект/ячейка не равен/на null.
-//            if (product != null) {
-//                System.out.println(product.getName());
-//            } else {
-//                System.out.println("null");
-//            }
-//        }
-//        System.out.println();
-//        System.out.println("Присваеваем первой ячейки, значение второй. Вторую. обнуляем");
-//        products[1] = products[2];
-//        products[2] = null;
-//        for (int index = 0; index < products.length; index++) {
-//            Product product = products[index];
-//            //проверяем, что объект/ячейка не равен/на null.
-//            if (product != null) {
-//                System.out.println(product.getName());
-//            } else {
-//                System.out.println("null");
-//            }
-//        }
+        for (int index = 0; index < products.length; index++) {
+            Product product = products[index];
+            //проверяем, что объект/ячейка не равен/на null.
+            if (product != null) {
+                System.out.println(product.getName());
+            } else {
+                System.out.println("null");
+            }
+        }
         System.out.println();
-        System.out.println("Вызываем метод для удаления элемента по индексу");
+        System.out.println("Обнуляем ячейку с индексом 1");
+        products[1] = null;
 
+        for (int index = 0; index < products.length; index++) {
+            Product product = products[index];
+            //проверяем, что объект/ячейка не равен/на null.
+            if (product != null) {
+                System.out.println(product.getName());
+            } else {
+                System.out.println("null");
+            }
+        }
+        System.out.println();
+        System.out.println("Присваеваем первой ячейки, значение второй. Вторую. обнуляем");
+        products[1] = products[2];
+        products[2] = null;
+        for (int index = 0; index < products.length; index++) {
+            Product product = products[index];
+            //проверяем, что объект/ячейка не равен/на null.
+            if (product != null) {
+                System.out.println(product.getName());
+            } else {
+                System.out.println("null");
+            }
+        }
+        System.out.println();
+        System.out.println("Вызываем метод для удаления элемента по индексу 2");
+        //Создаем объект
         Shop shop = new Shop();
-        shop.delite(products, 1);
+        //Вызываем метод для удаления элемента по индексу
+        shop.delite(products, 2);
+
         for (int index = 0; index < products.length; index++) {
             Product product = products[index];
             //проверяем, что объект/ячейка не равен/на null.
@@ -58,40 +60,16 @@ public class Shop {
         }
     }
 
-    /*
-    Посмотреть код Defragment!!!!
-    Задание.
-
-    1. Необходимо сместить все элементы на одну позицию влево, чтобы в массиве не было дырки.
-
-    Для того, чтобы сместить все элементы влево на одну позицию нужно использовать цикл for + index.
-
-    products[index] = products[index + 1];
-
-    После цикла нужно поставить на последнее место в массиве null, чтобы последний
-     и предпоследний элементы не дублировались
-
-    products[products.lenght - 1] = null;
-    2. Добавьте демонстрацию работы примера в метод main.
-
-     */
     public Product[] delite(Product[] products, int index) {
-        for (int i = 0; i < products.length; i++) {
-            while (index < products.length) {
-                if (products[index] != null) {
-                    products[index] = products[index + 1];
-                    products[index] = null;
+        for (int i = index; i < products.length; i++) {
+            while (i < products.length) {
+                if (products[i] != null) {
+                    products[i] = products[i + 1];
                     break;
                 }
-//                index++;
+                i++;
             }
-
         }
-
-
-
-
-
         return products;
-}
+    }
 }
