@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Tracker {
@@ -7,6 +8,7 @@ public class Tracker {
      * Массив для хранения заявок.
      */
     private final Item[] items = new Item[100];
+    private Item[] itemsNotNull = new Item[items.length];
 
     /**
      * Указатель ячейки для новой заявки.
@@ -30,8 +32,14 @@ public class Tracker {
      * @param
      */
     public Item[] findAll() {
-
-        return null;
+        for (int index = 0; index < items.length; index++) {
+            if (items[index] != null) {
+                itemsNotNull[position] = items[index];
+                position++;
+            }
+        }
+        itemsNotNull = Arrays.copyOf(itemsNotNull, position);
+        return itemsNotNull;
     }
 
     /**
