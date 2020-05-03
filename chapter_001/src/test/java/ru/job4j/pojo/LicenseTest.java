@@ -15,7 +15,7 @@ public class LicenseTest {
         second.setCode("audio");
         assertThat(first, is(second));
         boolean experted = true;
-        return actual.equals(experted);
+        //return actual.equals(experted);
     }
 
 
