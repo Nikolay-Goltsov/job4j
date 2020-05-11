@@ -46,19 +46,11 @@ public class License {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         License license = (License) o;
-        return //owner.equals(license.owner) &&
-                //model.equals(license.model) &&
-                code.equals(license.code) //&&
-                //created.equals(license.created)
-                ;
+        return code.equals(license.code);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(//owner, model,
-                 code
-                //, created
-                )
-                ;
+        return Objects.hash(code);
     }
 }
