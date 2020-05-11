@@ -8,8 +8,6 @@ public class Tracker {
      * Массив для хранения заявок.
      */
     private final Item[] items = new Item[100];
-    private Item[] itemsNotNull = new Item[items.length];
-
     /**
      * Указатель ячейки для новой заявки.
      */
@@ -32,14 +30,7 @@ public class Tracker {
      * @param
      */
     public Item[] findAll() {
-        for (int index = 0; index < items.length; index++) {
-            if (items[index] != null) {
-                itemsNotNull[position] = items[index];
-                position++;
-            }
-        }
-        itemsNotNull = Arrays.copyOf(itemsNotNull, position);
-        return itemsNotNull;
+        return Arrays.copyOf(items, position);
     }
 
     /**
@@ -48,20 +39,25 @@ public class Tracker {
      * @param key ключ для поиска
      */
     public Item[] findByName(String key) {
-
-        return null;
+        return Arrays.copyOf(items, position);
     }
 
     /**
      * Метод получения элементов из хранилища по имени
+     * Подсмотрел в интернете. Работает.
      *
      * @param id индификатор для поиска
      */
     public Item findById(String id) {
-
-        return null;
+        Item res = null;
+        for (Item item : items) {
+            if (item.getId() == (id)) {
+                res = item;
+                break;
+            }
+        }
+        return res;
     }
-
 
     /**
      * Метод генерирует уникальный ключ для заявки.
