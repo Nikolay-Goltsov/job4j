@@ -39,6 +39,16 @@ public class Tracker {
      * @param key ключ для поиска
      */
     public Item[] findByName(String key) {
+        Item[] items = new Item[position];
+        Tracker tracker = new Tracker();
+        int count = 0;
+        for (int index = 0; index < items.length; index++) {
+            Item item = new Item(key);
+            if (items.equals(key)) {
+                tracker.add(item);
+                count++;
+            }
+        }
         return Arrays.copyOf(items, position);
     }
 
