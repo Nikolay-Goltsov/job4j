@@ -8,6 +8,8 @@ public class Tracker {
      * Массив для хранения заявок.
      */
     private final Item[] items = new Item[100];
+    private int ids = 1; // Переменная для ключа
+    private int size = 0;
     /**
      * Указатель ячейки для новой заявки.
      */
@@ -19,8 +21,8 @@ public class Tracker {
      * @param item новая заявка
      */
     public Item add(Item item) {
-        item.setId(generateId());
-        items[position++] = item;
+        item.setId(ids++); // Присвоение ключа
+        items[size++] = item;
         return item;
     }
 
@@ -33,23 +35,34 @@ public class Tracker {
         return Arrays.copyOf(items, position);
     }
 
+    public Item findById(int id) {
+        Item rsl = null;
+        for (int index = 0; index < size; index++) {
+            Item item = items[index];
+            if (item.getId() == id) {
+                rsl = item;
+                break;
+            }
+        }
+        return rsl;
+    }
+
     /**
      * Метод получения элементов из хранилища по имени
      *
      * @param key ключ для поиска
      */
     public Item[] findByName(String key) {
-        Item[] items = new Item[position];
-        Tracker tracker = new Tracker();
+        Item[] itemss = new Item[size];
         int count = 0;
         for (int index = 0; index < items.length; index++) {
             Item item = new Item(key);
             if (items.equals(key)) {
-                tracker.add(item);
+                itemss[index] = item;
                 count++;
             }
         }
-        return Arrays.copyOf(items, position);
+        return Arrays.copyOf(itemss, count);
     }
 
     /**
@@ -58,16 +71,16 @@ public class Tracker {
      *
      * @param id индификатор для поиска
      */
-    public Item findById(String id) {
-        Item res = null;
-        for (Item item : items) {
-            if (item.getId() == (id)) {
-                res = item;
-                break;
-            }
-        }
-        return res;
-    }
+//    public Item findById(String id) {
+//        Item res = null;
+//        for (Item item : items) {
+////            if (item.getId() == (id)) {
+////                res = item;
+////                break;
+////            }
+//        }
+//        return res;
+//    }
 
     /**
      * Метод генерирует уникальный ключ для заявки.
