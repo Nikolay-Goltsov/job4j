@@ -13,7 +13,7 @@ public class Tracker {
     /**
      * Указатель ячейки для новой заявки.
      */
-    private int position = 0;
+//    private int position = 0;
 
     /**
      * Метод добавления заявки в хранилище
@@ -32,7 +32,7 @@ public class Tracker {
      * @param
      */
     public Item[] findAll() {
-        return Arrays.copyOf(items, position);
+        return Arrays.copyOf(items, size);
     }
 
     public Item findById(int id) {
@@ -55,9 +55,9 @@ public class Tracker {
     public Item[] findByName(String key) {
         Item[] itemss = new Item[size];
         int count = 0;
-        for (int index = 0; index < items.length; index++) {
+        for (int index = 0; index < size; index++) {
             Item item = new Item(key);
-            if (items.equals(key)) {
+            if (items[index].getName().equals(key)) {
                 itemss[index] = item;
                 count++;
             }
@@ -88,8 +88,24 @@ public class Tracker {
      *
      * @return Уникальный ключ.
      */
-    private String generateId() {
-        Random rm = new Random();
-        return String.valueOf(rm.nextLong() + System.currentTimeMillis());
-    }
+//    private String generateId() {
+//        Random rm = new Random();
+//        return String.valueOf(rm.nextLong() + System.currentTimeMillis());
+//    }
+//    private int indexId(int id) {
+//        int rsl = -1;
+//        for (int index = 0; index < size; index++) {
+//            if (items[index].getId() == id) {
+//                rsl = index;
+//                break;
+//            }
+//        }
+//        return rsl;
+//    }
+//
+//
+//    public boolean replace(int id, Item item) {
+//
+//        return true;
+//    }
 }

@@ -7,11 +7,5 @@ public class StartUI {
         tracker.add(new Item("Nikolas"));
         System.out.println(tracker.findById(1));
         System.out.println(tracker.findById(2));
-
-
-
-
-
-
     }
 }
